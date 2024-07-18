@@ -1,130 +1,44 @@
-# Simple Calculator
+# BASIC SIMPLE CALCULATOR
 
-This is a simple calculator built with HTML, CSS, and vanilla JavaScript. The calculator supports basic arithmetic operations: addition, subtraction, multiplication, and division.
+## APP SUMMARY
 
-## Getting Started
 
-### Prerequisites
+The style.css file defines the visual appearance of a calculator application. It centers the calculator on the page with a dark background and styles the display area with a distinct font, color scheme, and alignment for readability. Buttons are arranged in a responsive grid layout with defined sizes, colors, and hover effects to enhance user interaction. Meanwhile, script.js handles the calculator's functionality, including number input, arithmetic operations, and display updates. Together with index.html, which structures the calculator interface and integrates external styling and scripting, the code creates a cohesive and functional calculator experience for users.
 
-To run this project, you only need a web browser.
 
-### Installation
+## STACK / TECHNOLOGY
 
-1. **Fork the Repository**
-   - Click the "Fork" button at the top right of this repository page to create a copy of this repository in your GitHub account.
+- Javascript
+- HTML5
+- CSS3
+- GitHub
 
-2. **Clone the Repository**
-   - Clone the forked repository to your local machine:
-     ```bash
-     git clone https://github.com/YOUR-USERNAME/24w4-starter-calculator.git
-     cd 24w4-starter-calculator
-     ```
+## FEATURES REQUESTED
 
-3. **Commit Regularly**
-   - Make sure to commit your changes regularly:
-     ```bash
-     git add .
-     git commit -m "Your descriptive commit message"
-     git push origin main
-     ```
+- Memory function that stores the history of the user.
+- A cool background that changes and lights up a different color whenever it is clicked.
+- A sound effect to say each digit/operator out loud whenever a button is triggered.
+- 
 
-4. **Open the Project**
-   - Open `index.html` in your preferred web browser to see the calculator in action.
+## LEARNING UPDATE
 
-### File Structure
+This is all new to me but I find it fascinating that there is endless possibilities on what you can make your code do.
+It is always fun to play around with the coloring in CSS.  HTML is equally fun too. I haven't dived deep into Javascript yet because there is so much to study but one thing I can tell is that it is a hard language to learn but will be the most rewarding in the end. The most satisfying feeling is seeing what happens in my chrome browser as I code. It's one of the parts am always looking forward to.
+Javascript felt like i was learning a totally new language that is not English but now, I can strongly say I am far better than when I started coding.
 
-- `index.html` - The main HTML file that contains the structure of the calculator.
-- `styles.css` - The CSS file that styles the calculator.
-- `script.js` - The JavaScript file that contains the logic for the calculator.
 
-## Usage
 
-Open `index.html` in a web browser to use the calculator.
+## REFERENCES
 
-## Customization
+- [Calculator HTML](https://github.com/alicechuma7/24w4-starter-calculator/blob/main/index.html)
+- https://github.com/alicechuma7/24w4-starter-calculator/blob/main/script.js
 
-You can customize the calculator to fit your needs. Here are some examples:
 
-### Adding a Custom CSS Class
 
-You can add a custom CSS class to style additional buttons or elements.
+  #### Contact alicechuma7:alicechuma7@gmail.com.
+  
 
-1. Add a custom button in the `index.html` file:
-    ```html
-    <button class="btn btn-custom" onclick="yourCustomFunction()">Custom</button>
-    ```
 
-2. Define the custom class in `styles.css`:
-    ```css
-    .btn-custom {
-        background-color: #ff5722;
-        color: #fff;
-    }
 
-    .btn-custom:hover {
-        background-color: #e64a19;
-    }
-    ```
-
-3. Add the custom function in `script.js`:
-    ```javascript
-    function yourCustomFunction() {
-        // Your custom function logic
-        alert('Custom button clicked!');
-    }
-    ```
-
-### Ideas for Further Customization
-
-#### Backgrounds
-
-You can add background images or colors to the calculator.
-
-1. Add a background color to the calculator in `styles.css`:
-    ```css
-    .calculator {
-        background-color: #f9f9f9;
-    }
-    ```
-
-2. Add a background image:
-    ```css
-    body {
-        background-image: url('your-image.jpg');
-        background-size: cover;
-    }
-    ```
-
-#### Colors
-
-Change the button colors to fit your theme.
-
-1. Define custom colors for the buttons:
-    ```css
-    .btn {
-        background-color: #007bff;
-        color: #fff;
-    }
-
-    .btn:hover {
-        background-color: #0056b3;
-    }
-    ```
-
-#### Cool Functions
-
-You can add more advanced functionality to the calculator.
-
-1. Add a square root function:
-    ```html
-    <button class="btn" onclick="calculateSquareRoot()">√</button>
-    ```
-
-2. Add the function logic in `script.js`:
-    ```javascript
-    function calculateSquareRoot() {
-        displayValue = Math.sqrt(parseFloat(displayValue)).toString();
-        updateDisplay();
-    }
-    ```
-# 24w4-starter-calculator
+   
+  
