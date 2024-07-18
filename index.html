@@ -4,30 +4,51 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>24w4 Simple Calculator</title>
+    <style>
+      .custom-cursor {
+        cursor: pointer; /* use pointer to show hand cursor */
+      }
+
+      .custom-cursor:hover {
+        cursor: url("C:\Users\alice\Downloads\45e1871b-51e5-4084-8db8-20bed525ba2e.tmp") pointer;
+      }
+  
+    </style>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+
     <div class="calculator">
       <div class="display" id="display">0</div>
       <div class="buttons">
-        <button class="btn" onclick="appendNumber(1)">1</button>
-        <button class="btn" onclick="appendNumber(2)">2</button>
-        <button class="btn" onclick="appendNumber(3)">3</button>
-        <button class="btn" onclick="appendOperator('+')">+</button>
-        <button class="btn" onclick="appendNumber(4)">4</button>
-        <button class="btn" onclick="appendNumber(5)">5</button>
-        <button class="btn" onclick="appendNumber(6)">6</button>
-        <button class="btn" onclick="appendOperator('-')">-</button>
-        <button class="btn" onclick="appendNumber(7)">7</button>
-        <button class="btn" onclick="appendNumber(8)">8</button>
-        <button class="btn" onclick="appendNumber(9)">9</button>
-        <button class="btn" onclick="appendOperator('*')">x</button>
-        <button class="btn" onclick="appendNumber(0)">0</button>
-        <button class="btn" onclick="appendOperator('/')">/</button>
-        <button class="btn" onclick="calculate()">=</button>
-        <button class="btn btn-clear" onclick="clearDisplay()">C</button>
+        <button class="btn" onclick="appendNumber(1); playSound('keypress-sound')">1</button>
+        <button class="btn" onclick="appendNumber(2); playSound('keypress-sound')">2</button>
+        <button class="btn" onclick="appendNumber(3); playSound('keypress-sound')">3</button>
+        <button class="btn" onclick="appendOperator('+'); playSound('keypress-sound')">+</button>
+        <button class="btn" onclick="appendNumber(4); playSound('keypress-sound')">4</button>
+        <button class="btn" onclick="appendNumber(5); playSound('keypress-sound')">5</button>
+        <button class="btn" onclick="appendNumber(6); playSound('keypress-sound')">6</button>
+        <button class="btn" onclick="appendOperator('-'); playSound('keypress-sound')">-</button>
+        <button class="btn" onclick="appendNumber(7); playSound('keypress-sound')">7</button>
+        <button class="btn" onclick="appendNumber(8); playSound('keypress-sound')">8</button>
+        <button class="btn" onclick="appendNumber(9); playSound('keypress-sound')">9</button>
+        <button class="btn" onclick="appendOperator('*'); playSound('keypress-sound')">x</button>
+        <button class="btn" onclick="appendNumber(0); playSound('keypress-sound')">0</button>
+        <button class="btn" onclick="appendOperator('/'); playSound('keypress-sound')">/</button>
+        <button class="btn" onclick="calculate(); playSound('keypress-sound')">=</button>
+        <button class="btn btn-clear" onclick="clearDisplay(); playSound('keypress-sound')">C</button>
       </div>
     </div>
+    <audio id="keypress-sound" src="C:\Users\alice\OneDrive\Documents\Bloomtech_projects\Sprint challenge\pop-up-something-160353 (1).mp3"></audio>
     <script src="script.js"></script>
+    <script>
+      function playSound(soundId) {
+        var sound = document.getElementById(soundId);
+        sound.currentTime = 0;
+        sound.play()
+      }
+    </script>
   </body>
 </html>
+
+       
