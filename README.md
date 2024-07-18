@@ -35,7 +35,7 @@ Javascript felt like i was learning a totally new language that is not English b
 
 
 
-  #### Contact alicechuma7:alicechuma7@gmail.com.
+  #### Contact alicechuma7: alicechuma7@gmail.com.
   
 
 
